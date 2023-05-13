@@ -62,6 +62,9 @@ const App = () => {
                 break;
             case '/':
                 calculatedRes = num1 / num2;
+                if(isNaN(calculatedRes)){
+                    calculatedRes = "Undefined : can't divide 0 / 0"
+                };
                 break;
             default:
                 break;
